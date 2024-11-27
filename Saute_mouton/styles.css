@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* pour faire un dégradé sur toute la page */
+    background: linear-gradient(#22a4c2, #29b7d7, forestgreen);
+}
+.haut {
+    height: 50dvh;
+    width: 150svh;
+}
+.bas {
+    height: 50dvh;
+    width: 150svh;
+    display: flex;
+    flex-direction: row ;
+}
+.mouton {
+    position: relative;
+    animation: mouton 1s linear ;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes mouton {
+    0%{
+        transform: translate(0px,0px);
+        }
+    25%{
+        transform: translate(150px,-400px);
+        content: url("mouton_qui_saute-removebg-preview.png");
+    }
+
+    50%{
+        transform: translate(550px,-550px);
+        content: url("mouton_qui_saute-removebg-preview.png");
+    }
+
+    75%{
+        transform: translate(1100px,-500px);
+        content: url("mouton_qui_saute-removebg-preview.png");
+    }
+    95%{
+        transform: translate(1300px,-200px);
+        content: url("mouton_qui_saute-removebg-preview.png");
+    }
+    100%{
+        transform: translate(1350px,0px);
+        
+    }
+
+  }
