@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Morpion</title>
+</head>
+<body>
+    <h1>Morpion</h1>
+    <p id="play"></p>
+    <button onclick="cancel()">Réinitialiser le jeu</button>
+    <div class="text">
+        <p>Tour: </p>
+        <p id="numberTour">1</p>
+    </div>
+    
+    <h2 id ="message"></h2>
+    <section class="plateau">
+        <div class="case" id="one" onclick="cases('one')"></div>
+        <div class="case" id="two" onclick="cases('two')"></div>
+        <div class="case" id="three" onclick="cases('three')"></div>
+        <div class="case" id="four" onclick="cases('four')"></div>
+        <div class="case" id="five" onclick="cases('five')"></div>
+        <div class="case" id="six" onclick="cases('six')"></div>
+        <div class="case" id="seven" onclick="cases('seven')"></div>
+        <div class="case" id="height" onclick="cases('height')"></div>
+        <div class="case" id="nine" onclick="cases('nine')"></div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
